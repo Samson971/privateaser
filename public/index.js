@@ -150,9 +150,9 @@ function getBar (id)
 {
 	for (var i =0;i < bars.length ; i++)
 	{
-		if( bar[i].id = id )
+		if( bars[i].id = id )
 		{
-			return bar[i];
+			return bars[i];
 		}
 	}
 }
