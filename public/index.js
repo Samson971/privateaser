@@ -150,14 +150,12 @@ const actors = [{
 function BookingPrice (bars , events)
 {
 	var numevent = 0;
-	for (numevent ; numevent < events.length ; numevent++)
+	for (numevent =0 ; numevent < events.length ; numevent++)
 	{
 		events[numevent].price = (events[numevent].getElementById(barId).pricePerHour * events[numevent].time) + (events[numevent].getElementById(barId).pricePerPerson * events[numevent].persons);
 	}
 }
 
-
-BookingPrice(bars , events);
 
 console.log(bars);
 console.log(events);
