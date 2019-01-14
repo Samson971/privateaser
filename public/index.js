@@ -159,14 +159,13 @@ function getBar (id)
 
 
 
-events.forEach(function(event))
-{
+events.forEach(function(event){
 	
 	const {barId, time , persons } = event;
 	const {pricePerHour, pricePerPerson} = getBar(barId);
 	
 	event.price = time*pricePerHour + persons*pricePerPerson ;
-}
+});
 
 
 for (var i =0; i<actors.length;i++ )
